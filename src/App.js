@@ -1,8 +1,6 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-
-import Payment from "./pages/paymentpage/Payment";
-
+import Payment from "./pages/paymentPage/Payment";
 function App() {
   return (
     <div className="App">

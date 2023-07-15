@@ -10,7 +10,7 @@
 
 .nav {
     display: flex;
-    width: 90%;
+    width:85%;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -21,9 +21,10 @@
 .logo {
     text-align: center;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 900;
+    line-height: normal;
     letter-spacing: 1.14px;
     background: linear-gradient(122deg, #0096FF 42.14%, #0048FF 96.70%);
     background-clip: text;
@@ -47,13 +48,19 @@
 
 
 .options>p {
-    font-weight: normal;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 button {
     display: flex;
     height: 30px;
-    padding: 10px 42px;
+    padding: 10px 30px;
     justify-content: center;
     align-items: center;
     gap: 10px;

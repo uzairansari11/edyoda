@@ -63,7 +63,7 @@ const Navbar = () => {
                         <p>Log in</p>
                     </div>
                     {/* join now button */}
-                    <button>join now</button>
+                    <button>JOIN NOW</button>
                 </div>
                 {/* ----------------------------------------- */}
             </nav>

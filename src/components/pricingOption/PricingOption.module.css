@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* position: relative; */
+    cursor: pointer;
+    border: 2px solid #BEBEBE;
+    /* padding: 20px 0px; */
+    background-color: #E7E7E7;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.content {
+    /* border: 1px solid green; */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.main-pricing {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 8px;
+    height: 10px;
+}
+
+ .price>div {
+    display: flex;
+    align-items: center;
+    height: 8px;
+} 
