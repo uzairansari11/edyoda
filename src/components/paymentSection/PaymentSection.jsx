@@ -36,13 +36,10 @@ const PaymentSection = () => {
             {pricingOptions.map((option) => (
                 <PricingOption
                     key={option.id}
-                    id={option.id}
-                    title={option.title}
-                    totalPrice={option.totalPrice}
-                    monthlyPrice={option.monthlyPrice}
-                    value={option.value}
+                    {...option}
                     handleOption={handleOption}
                     checkedValue={checkedValue}
+
                 />
             ))}
             <hr />

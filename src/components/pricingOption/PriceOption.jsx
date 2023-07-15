@@ -9,40 +9,48 @@ const PricingOption = ({
     value,
     handleOption,
     checkedValue,
+    text,
+    color
 }) => {
     const handleCheckedValue = () => {
         handleOption(id);
     };
 
     return (
-        <label name='subscription'>
+        <label name="subscription">
             <div
-                className={`${id === checkedValue ? styles.containerSelected : styles.container
+                className={`${id === checkedValue ? styles["selected-container"] : styles.container
                     }`}
             >
-                <div>
+                {text ? <div className={styles.extraInfo}
+                    style={{ backgroundColor: color }}
+
+                >{text}</div> : <></>}
+
+                <div className={`${!text ? styles['main-without-text'] : styles.main}`}>
                     <input
                         type="radio"
                         name="subscription"
                         value={value}
                         onChange={handleCheckedValue}
                         checked={checkedValue === id}
-                        disabled={id === 1}
+                        disabled={text === "Offer expired"}
                     />
-                </div>
-                <div className={styles.content}>
-                    <div>
-                        <p>{title}</p>
-                    </div>
-                    <div className={styles["main-pricing"]}>
-                        <div className={styles.price}>
-                            <div>
-                                <p>Total {totalPrice}</p>
-                            </div>
+
+                    <div className={styles.content}>
+                        <div>
+                            <p>{title}</p>
                         </div>
-                        <div className={styles.price}>
-                            <div>
-                                <p>{monthlyPrice} /mo</p>
+                        <div className={styles["main-pricing"]}>
+                            <div className={styles.price}>
+                                <div>
+                                    <p>Total {totalPrice}</p>
+                                </div>
+                            </div>
+                            <div className={styles.price}>
+                                <div>
+                                    <p>{monthlyPrice} /mo</p>
+                                </div>
                             </div>
                         </div>
                     </div>
