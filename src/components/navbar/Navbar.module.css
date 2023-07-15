@@ -1,6 +1,11 @@
 .container {
-    background: #fff;
-    padding: 8px 20px;
+    background: white;
+    box-sizing: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
 }
 
 .nav {
@@ -9,6 +14,8 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    height: 30px;
+    padding: 8px;
 }
 
 .logo {
@@ -17,7 +24,6 @@
     font-size: 26px;
     font-style: normal;
     font-weight: 900;
-    line-height: normal;
     letter-spacing: 1.14px;
     background: linear-gradient(122deg, #0096FF 42.14%, #0048FF 96.70%);
     background-clip: text;
@@ -34,10 +40,15 @@
 
 .options {
     display: flex;
+    font-weight: 100;
     align-items: center;
     gap: 12px;
 }
 
+
+.options>p {
+    font-weight: normal;
+}
 
 button {
     display: flex;
@@ -49,4 +60,5 @@ button {
     border-radius: 52px;
     background: linear-gradient(224deg, #0048FF 0%, #0096FF 100%);
     border: none;
+    color: #fff;
 }

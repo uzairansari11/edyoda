@@ -3,11 +3,16 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
     return (
         <div className={styles.container}>
+            {/* ----------------Navbar Start -------------------- */}
             <nav className={styles.nav}>
+                {/* -------------------left section ---------------------- */}
                 <div className={styles["section"]}>
-                    <text className={styles.logo}>EDYODA</text>
+                    {/* logo part */}
+                    <p className={styles.logo}>EDYODA</p>
+                    {/* options */}
                     <div className={styles.options}>
-                        <text>Courses</text>
+                        <p>Courses</p>
+
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="25"
@@ -22,7 +27,7 @@ const Navbar = () => {
                         </svg>
                     </div>
                     <div className={styles.options}>
-                        <text>Programs</text>
+                        <p>Programs</p>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="25"
@@ -37,8 +42,10 @@ const Navbar = () => {
                         </svg>
                     </div>
                 </div>
+                {/* ------------------right section----------------------- */}
 
                 <div className={styles.section}>
+                    {/* search icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -51,10 +58,16 @@ const Navbar = () => {
                             fill="black"
                         />
                     </svg>
-                    <text>Log in</text>
+                    {/* login option */}
+                    <div className={styles.options}>
+                        <p>Log in</p>
+                    </div>
+                    {/* join now button */}
                     <button>join now</button>
                 </div>
+                {/* ----------------------------------------- */}
             </nav>
+            {/* --------------------Navbar End--------------------- */}
         </div>
     );
 };
