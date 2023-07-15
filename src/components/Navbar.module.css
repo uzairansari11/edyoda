@@ -1,0 +1,52 @@
+.container {
+    background: #fff;
+    padding: 8px 20px;
+}
+
+.nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.14px;
+    background: linear-gradient(122deg, #0096FF 42.14%, #0048FF 96.70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+button {
+    display: flex;
+    height: 30px;
+    padding: 10px 42px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 52px;
+    background: linear-gradient(224deg, #0048FF 0%, #0096FF 100%);
+    border: none;
+}
