@@ -2,13 +2,23 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    /* position: relative; */
     cursor: pointer;
     border: 2px solid #BEBEBE;
-    /* padding: 20px 0px; */
-    background-color: #E7E7E7;
+    background-color: #fff;
     border-radius: 4px;
     height: 40px;
+}
+
+
+.containerSelected {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #bbf0ca;
+    border-radius: 4px;
+    height: 40px;
+    background-color: #bbf0ca;
 }
 
 .content {
@@ -18,6 +28,45 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+}
+
+.content>div>p {
+
+    color: #3C4852;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 19.2px */
+
+}
+
+input[type="radio"] {
+    /* Styling */
+    appearance: none;
+    border: 2px solid #7e7b7b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    padding: 10px;
+
+    /* Customization */
+    background-color: white;
+}
+
+/* Checked state */
+input[type="radio"]:checked {
+    background-color: #47BA68;
+    border: 2px solid #47BA68;
+}
+
+input[type="radio"]:disabled {
+    background-color: #BEBEBE;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .main-pricing {
@@ -37,8 +86,8 @@
     height: 10px;
 }
 
- .price>div {
+.price>div {
     display: flex;
     align-items: center;
     height: 8px;
-} 
+}

@@ -1,0 +1,19 @@
+.main {
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(222, 67, 19, 0.20) 0%, rgba(222, 67, 19, 0.20) 0.75%, rgba(222, 67, 19, 0.20) 2.92%, rgba(222, 68, 20, 0.20) 6.37%, rgba(223, 69, 21, 0.20) 10.97%, rgba(223, 72, 22, 0.20) 16.59%, rgba(224, 75, 24, 0.20) 23.10%, rgba(225, 80, 27, 0.20) 30.37%, rgba(227, 86, 31, 0.20) 38.27%, rgba(229, 94, 36, 0.20) 46.66%, rgba(231, 104, 43, 0.20) 55.41%, rgba(235, 117, 51, 0.20) 64.39%, rgba(238, 132, 60, 0.20) 73.47%, rgba(243, 149, 71, 0.20) 82.52%, rgba(248, 169, 84, 0.20) 91.41%, rgba(254, 193, 99, 0.20) 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin:10px 0px ;
+    border: 2px solid #DE4313;
+}
+
+.main>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 15px;
+    height: 20px;
+    align-items: center;
+    color: #DE4313
+}

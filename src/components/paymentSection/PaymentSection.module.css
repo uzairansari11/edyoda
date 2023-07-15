@@ -1,30 +1,43 @@
 .signup-subscribe-section {
-    display: flex;
-    justify-content: space-around;
-    height: 36px;
+	display: flex;
+	justify-content: space-around;
+	height: 36px;
 }
 
-.signup-subscribe-section>div {
-    height: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
+.signup-subscribe-section > div {
+	height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.signup-subscribe-section>div>div {
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+.signup-subscribe-section > div > div {
+	height: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.signup-subscribe-section>div>div:first-child {
-    width: 20px;
-    height: 20px;
-    border-radius: 1000px;
-    background: #0096FF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-} 
+
+.signup-subscribe-section > div > div:first-child {
+	width: 20px;
+	height: 20px;
+	border-radius: 1000px;
+	background: #0096ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.subscriptionplan {
+	color: #3c4852;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+}
+hr{
+    margin: 20px auto;
+    width: 100%;
+}

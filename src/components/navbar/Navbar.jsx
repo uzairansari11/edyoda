@@ -63,7 +63,9 @@ const Navbar = () => {
                         <p>Log in</p>
                     </div>
                     {/* join now button */}
-                    <button>JOIN NOW</button>
+                    <button
+                        className={styles.joinButton}
+                    >JOIN NOW</button>
                 </div>
                 {/* ----------------------------------------- */}
             </nav>

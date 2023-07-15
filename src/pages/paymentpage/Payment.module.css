@@ -1,33 +1,29 @@
 .container {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 0;
+    margin-top: -45px;
     background-image: url('../../assest/images/BackGround.png');
-    height: 100vh;
-    box-sizing: 100%;
+    height: 150vh;
+    box-sizing: border-box;
+    /* Fix typo: change '100%' to 'border-box' */
     width: 100%;
     color: white;
 }
 
 .main {
-    border: 1px solid red;
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: auto;
-    margin-top: 60px;
-    /* margin-top: 50px; */
 }
 
 .payment-left-section {
-    border: 1px solid green;
-    margin-top: 0;
+    margin-top: 120px;
+    /* Add 'px' unit */
     width: 30%;
 }
 
 .payment-left-section>p {
     color: #FFF;
+    margin-top: 0px;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: Raleway;
     font-size: 22px;
@@ -41,14 +37,69 @@
 .listing {
     display: flex;
     flex-direction: column;
-    gap: "10px";
+    gap: 10px;
+    /* Remove quotation marks around 10px */
 }
 
 .payment-right-section {
+    margin-top: 120px;
     padding: 10px;
     border-radius: 10px;
     border: none;
     width: 30%;
     background-color: white;
-    color: black
+    color: black;
+}
+
+.subscription {
+    display: flex;
+    width: 90%;
+    height: 20px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+.secondary-button {
+    display: flex;
+    height: 40px;
+    padding: 10px 40px;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid #F77171;
+    color: #F77171;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 8px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.primary-button {
+    border: none;
+    display: flex;
+    height: 40px;
+    width: 48%;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #47BA68;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 8px;
+    font-style: normal;
+    text-transform: uppercase;
 }

@@ -1,16 +1,17 @@
 .container {
+    position: fixed;
     background: white;
     box-sizing: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     display: flex;
+    top: 0;
     align-items: center;
-
+    z-index: 10;
 }
 
 .nav {
     display: flex;
-    width:85%;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -57,7 +58,7 @@
     line-height: normal;
 }
 
-button {
+.joinButton {
     display: flex;
     height: 30px;
     padding: 10px 30px;

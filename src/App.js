@@ -1,9 +1,9 @@
-import "./App.css";
+// import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Payment from "./pages/paymentPage/Payment";
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <Payment />
     </div>
