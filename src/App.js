@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
-import Payment from "./pages/paymentPage/Payment";
+import Payment from "./pages/Payment";
 function App() {
   return (
     <div>

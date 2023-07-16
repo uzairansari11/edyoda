@@ -1,6 +1,6 @@
-import Highlights from "../../components/highlight/Highlights";
-import PaymentSection from "../../components/paymentSection/PaymentSection";
-import { lists } from "../../utils/highlights";
+import Highlights from "../components/highlight/Highlights";
+import PaymentSection from "../components/paymentSection/PaymentSection";
+import { lists } from "../utils/highlights";
 import styles from "./Payment.module.css";
 const Payment = () => {
   return (
