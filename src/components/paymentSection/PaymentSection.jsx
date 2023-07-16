@@ -54,8 +54,10 @@ const PaymentSection = () => {
 
                     <span className={styles.total}>Total</span> (Incl. of 18% GST)</p>
                 <p className={styles.finalPricing}>
-                    ₹{pricingOptions.find((ele) => ele.id === checkedValue)?.totalPrice}
+                    ₹{Math.ceil(pricingOptions.find((ele) => ele.id === checkedValue)?.totalPrice * 1.18 - 63)}
                 </p>
+
+
             </div>
             <div className={styles.buttons}>
                 <button className={styles["secondary-button"]}>CANCEL</button>

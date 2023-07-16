@@ -15,11 +15,24 @@ const Payment = () => {
                   textDecoration: "line-through",
                   textDecorationColor: "red",
                   marginRight: "8px",
+                  fontFamily: "Roboto",
+                  fontSize: "24px"
                 }}
               >
                 ₹ 18,500
               </span>
-              at just <span style={{ color: "#0096FF" }}>₹ 99</span> per year!
+              at just{" "}
+              <span
+                style={{
+                  color: "#0096FF",
+                  fontFamily: "Roboto",
+                  fontSize: "24px"
+
+                }}
+              >
+                ₹ 99
+              </span>{" "}
+              per year!
             </p>
           </div>
 

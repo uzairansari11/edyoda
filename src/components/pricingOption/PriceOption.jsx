@@ -10,7 +10,7 @@ const PricingOption = ({
     handleOption,
     checkedValue,
     text,
-    color
+    color,
 }) => {
     const handleCheckedValue = () => {
         handleOption(id);
@@ -20,14 +20,17 @@ const PricingOption = ({
         <label name="subscription">
             <div
                 className={`${id === checkedValue ? styles["selected-container"] : styles.container
-                    }`}
+                    } ${id === 1 ? styles["additional-class"] : ""}`}
             >
-                {text ? <div className={styles.extraInfo}
-                    style={{ backgroundColor: color }}
+                {text ? (
+                    <div className={styles.extraInfo} style={{ backgroundColor: color }}>
+                        {text}
+                    </div>
+                ) : (
+                    <></>
+                )}
 
-                >{text}</div> : <></>}
-
-                <div className={`${!text ? styles['main-without-text'] : styles.main}`}>
+                <div className={`${!text ? styles["main-without-text"] : styles.main}`}>
                     <input
                         type="radio"
                         name="subscription"
@@ -39,17 +42,19 @@ const PricingOption = ({
 
                     <div className={styles.content}>
                         <div>
-                            <p>{title}</p>
+                            <p className={`${id === 1 ? styles.titleNameFirst : styles.titleName}`}>{title}</p>
                         </div>
                         <div className={styles["main-pricing"]}>
                             <div className={styles.price}>
                                 <div>
-                                    <p>Total {totalPrice}</p>
+                                    <p className={styles.total}>Total</p>
+                                    <p className={styles.mainPricing}> ₹{totalPrice}</p>
                                 </div>
                             </div>
                             <div className={styles.price}>
                                 <div>
-                                    <p>{monthlyPrice} /mo</p>
+                                    <p>₹{monthlyPrice} </p>
+                                    <p className={styles.month}>/mo</p>
                                 </div>
                             </div>
                         </div>

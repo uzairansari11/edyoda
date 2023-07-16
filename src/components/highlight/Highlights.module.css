@@ -14,6 +14,27 @@
     fill: white;
 }
 
+.icon {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    bottom:-.5px;
+    left: 4px;
+    font-size: 10px;
+}
+
+.slash {
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    transform: rotate(45deg);
+    border-radius: 16px;
+    background: #fff;
+    margin: -30px 20px 70px 12px;
+}
+
 .whiteWord {
     color: white;
 }
