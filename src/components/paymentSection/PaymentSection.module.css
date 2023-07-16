@@ -1,7 +1,9 @@
 .signup-subscribe-section {
 	display: flex;
 	justify-content: space-around;
-	height: 36px;
+	height: 42px;
+	align-items: center;
+	margin-top: 30px;
 }
 
 .signup-subscribe-section>div {
@@ -19,14 +21,16 @@
 }
 
 .signup-subscribe-section>div>div:first-child {
-	width: 20px;
-	height: 20px;
+	width: 26px;
+	height: 26px;
 	border-radius: 1000px;
 	background: #0096ff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
+	color: white;
+	margin-bottom: 5px;
 }
 
 .subscriptionplan {
@@ -34,12 +38,15 @@
 	font-family: Roboto;
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
+	margin-top: 28px;
 }
 
+
+
 hr {
-	margin: 20px auto;
+	margin-top: 20px;
 	width: 100%;
 }
 
@@ -50,6 +57,15 @@ hr {
 	justify-content: space-between;
 	margin: auto;
 	align-items: center;
+	margin-top: 10px;
+}
+
+.total {
+	font-weight: 500;
+}
+
+.finalPricing {
+	font-weight: 700;
 }
 
 .buttons {
@@ -64,7 +80,6 @@ hr {
 .secondary-button {
 	display: flex;
 	height: 40px;
-	padding: 10px 40px;
 	width: 48%;
 	justify-content: center;
 	align-items: center;
@@ -73,7 +88,7 @@ hr {
 	color: #F77171;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 8px;
+	font-size: 14px;
 	font-style: normal;
 	text-transform: uppercase;
 }
@@ -83,7 +98,6 @@ hr {
 	display: flex;
 	height: 40px;
 	width: 48%;
-	padding: 10px 40px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 4px;
@@ -91,7 +105,7 @@ hr {
 	color: #FFF;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 8px;
+	font-size: 14px;
 	font-style: normal;
 	text-transform: uppercase;
 }

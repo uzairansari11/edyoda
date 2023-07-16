@@ -6,7 +6,7 @@ export const pricingOptions = [
 		monthlyPrice: 8,
 		value: 1,
 		text: "Offer expired",
-		color: "red",
+		color: "#F77171",
 	},
 	{
 		id: 2,

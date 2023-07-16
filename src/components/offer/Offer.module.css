@@ -24,8 +24,9 @@
 
 .main>div:nth-child(1)>p:nth-child(2) {
     color: black;
+    font-weight: 400;
 }
 
 .main>div:nth-child(2) {
-    width: 72%;
+    width: 62%;
 }

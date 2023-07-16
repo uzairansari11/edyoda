@@ -9,5 +9,5 @@ export const lists = [
     { id: 2, title: "20,000+ Hours of content", imgURI: TimeIcon },
     { id: 3, title: "Exclusive webinar access", imgURI: LiveIcon },
     { id: 4, title: "Scholarship worth ₹94,500", imgURI: HatIcon },
-    { id: 5, title: "Ad Free learning experience", imgURI: AdsIcon },
+    { id: 5, title: "Ad-Free learning experience", imgURI: AdsIcon },
 ];

@@ -7,8 +7,22 @@ const Payment = () => {
     <div className={styles.container}>
       <div className={styles.main}>
         <div className={styles["payment-left-section"]}>
-          <p>Access curated courses worth</p>
-          <p>₹ 18,500 at just ₹ 99 per year!</p>
+          <div>
+            <p>Access curated courses worth</p>
+            <p>
+              <span
+                style={{
+                  textDecoration: "line-through",
+                  textDecorationColor: "red",
+                  marginRight: "8px",
+                }}
+              >
+                ₹ 18,500
+              </span>
+              at just <span style={{ color: "#0096FF" }}>₹ 99</span> per year!
+            </p>
+          </div>
+
           <div className={styles.listing}>
             {lists.length &&
               lists.map((ele) => <Highlights key={ele.id} {...ele} />)}
@@ -16,7 +30,6 @@ const Payment = () => {
         </div>
         <div className={styles["payment-right-section"]}>
           <PaymentSection />
-
         </div>
       </div>
     </div>

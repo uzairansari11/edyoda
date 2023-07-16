@@ -1,9 +1,8 @@
 .container {
     margin-top: -45px;
     background-image: url('../../assest/images/BackGround.png');
-    height: 150vh;
+    height: 170vh;
     box-sizing: border-box;
-    /* Fix typo: change '100%' to 'border-box' */
     width: 100%;
     color: white;
 }
@@ -17,11 +16,10 @@
 
 .payment-left-section {
     margin-top: 120px;
-    /* Add 'px' unit */
-    width: 30%;
+    width: 35%;
 }
 
-.payment-left-section>p {
+.payment-left-section>div>p {
     color: #FFF;
     margin-top: 0px;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -30,15 +28,16 @@
     font-style: normal;
     font-weight: normal;
     line-height: 125%;
-    letter-spacing: -0.56px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     text-align: left;
+    margin-bottom: 2px;
 }
 
 .listing {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Remove quotation marks around 10px */
 }
 
 .payment-right-section {
@@ -46,8 +45,7 @@
     padding: 10px;
     border-radius: 10px;
     border: none;
-    width: 35%;
+    width: 40%;
     background-color: white;
     color: black;
 }
-

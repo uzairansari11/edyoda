@@ -32,14 +32,17 @@ const PaymentSection = () => {
                 </div>
             </div>
             <p className={styles.subscriptionplan}>Select your subscription plan</p>
-            {pricingOptions.map((option) => (
-                <PricingOption
-                    key={option.id}
-                    {...option}
-                    handleOption={handleOption}
-                    checkedValue={checkedValue}
-                />
-            ))}
+            <div className={styles["pricing-options-container"]}>
+                {pricingOptions.map((option) => (
+                    <PricingOption
+                        key={option.id}
+                        {...option}
+                        handleOption={handleOption}
+                        checkedValue={checkedValue}
+                    />
+                ))}
+            </div>
+
             <hr />
             <div className={styles.subscription}>
                 <p>Subscription Fee</p>
@@ -47,8 +50,10 @@ const PaymentSection = () => {
             </div>
             <Offer />
             <div className={styles.subscription}>
-                <p>Total (Incl. of 18% GST)</p>
                 <p>
+
+                    <span className={styles.total}>Total</span> (Incl. of 18% GST)</p>
+                <p className={styles.finalPricing}>
                     ₹{pricingOptions.find((ele) => ele.id === checkedValue)?.totalPrice}
                 </p>
             </div>
